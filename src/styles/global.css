@@ -14,7 +14,7 @@
     --red: #e83f5b;
     --green: #4cd62b;
     --blue: #5965e0;
-    --bluedark: #4953b8;
+    --blue-dark: #4953b8;
     --blue-twitter: #2aa9e0;
 }
 
@@ -49,45 +49,4 @@ button {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.container{
-    height: 100vh; /*100 do viewport height, sempre a altura total*/
-    max-width: 992px;
-    margin: 0 auto;
-    padding: 2.5rem 2rem; /*vertical depois horizontal*/
-
-    display: flex;
-    flex-direction: column;
-}
-
-.experience-bar {
-    display: flex;
-    align-items: center;
-}
-
-.experience-bar span{
-    font-size: 1rem;
-}
-
-/* > significa q pega um nível de filho só */
-.experience-bar > div {
-    flex: 1; /*largura máxima possível do container*/
-    height: 4px;
-    border-radius:  4px;
-    background: var(--gray-line);
-    margin: 0 1.5rem;
-    position: relative;
-}
-
-.experience-bar > div > div {
- height: 4px;
- border-radius: 4px;
- background: var(--green);
-}
-
-span.current-experience{
-    position: absolute;
-    top: 12px;
-    transform: translateX(-50%); /*usar o meio do elemento como âncora*/
 }
