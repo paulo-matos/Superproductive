@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react'; //useEffect hook: when something happens, trigger other things to happen too
+import { useState, useEffect, Fragment } from 'react'; //useEffect hook: when something happens, trigger other things to happen too
 import styles from '../styles/components/Countdown.module.css';
 
+let countdownTimeout: NodeJS.Timeout;
+
 export function Countdown() {
-    const [time, setTime] = useState(25 * 60);
-    const [active, setActive] = useState(false);
+    const [time, setTime] = useState(0.1 * 60);
+    const [isActive, setIsActive] = useState(false);
+    const [hasFinished, setHasFinished] = useState(false);
 
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -13,16 +16,25 @@ export function Countdown() {
     //padstart verifies is the string has X characters and if not it fills with Y to the left - '5' becomes '05'
 
     function startCountdown() {
-        setActive(true);
+        setIsActive(true);
     }
 
-    useEffect(()=>{
-        if (active && time > 0){
-            setTimeout(()=>{ //setInterval not used because this way is easier to manage
+    function resetCountdown() {
+        clearTimeout(countdownTimeout); //clears the timeout event - pure JS - so it REALLY stops the timer
+        setIsActive(false);
+        setTime(0.1 * 60);
+    }
+
+    useEffect(() => { //generates "collateral effects"
+        if (isActive && time > 0) {
+            countdownTimeout = setTimeout(() => { //setInterval not used because this way is easier to manage
                 setTime(time - 1);
-            },1000) //setTimeout: something will happen after one second
+            }, 1000) //setTimeout: something will happen after one second
+        } else if (isActive && time === 0) {
+            setHasFinished(true);
+            setIsActive(false);
         }
-    },[active, time]) //dependency array of useEffect - every time 'active' or 'time' value changes, the function is executed
+    }, [isActive, time]) //dependency array of useEffect - every time 'isActive' or 'time' value changes, the function is executed
 
     return (
         <div>
@@ -38,13 +50,35 @@ export function Countdown() {
                 </div>
             </div>
 
-            <button
-                type="button"
-                className={styles.CountdownButton}
-                onClick={startCountdown}
-            >
-                Start Cycle
-            </button>
+            {hasFinished ? (
+                <button
+                    disabled
+                    className={styles.countdownButton}
+                >
+                    Finished cycle
+                </button>
+            ) : (
+                    // fragment - div not shown, just because it should be encapsulated
+                    <>
+                        { isActive ? (
+                            <button
+                                type="button"
+                                className={`${styles.countdownButton} ${styles.countdownButtonActive}`} //to use more than one class - it returns a String
+                                onClick={resetCountdown}
+                            >
+                                Stop Cycle
+                            </button>
+                        ) : (
+                                <button
+                                    type="button"
+                                    className={styles.countdownButton}
+                                    onClick={startCountdown}
+                                >
+                                    Start Cycle
+                                </button>
+                            )}
+                    </>
+                )}
         </div>
     );
 }
