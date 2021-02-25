@@ -1,0 +1,62 @@
+[
+    {
+        "type": "body",
+        "description": "Stretch one of your arms with your palm facing forward. Then, pull back your fingers alltogether with your other hand for 10 seconds. Do it for both arms.",
+        "amount": 80
+    },
+    {
+        "type": "body",
+        "description": "Stretch your arm against your chest and pull it using your other arm for 10 seconds. Do it for both arms.",
+        "amount": 60
+    },
+    {
+        "type": "body",
+        "description": "Stretch your neck, pulling it with the help of your hand to the left and right directions, remaining on the position for a couple seconds.",
+        "amount": 70
+    },
+    {
+        "type": "body",
+        "description": "With both of your hands behind your back, pull it down, stretching the back of the region.",
+        "amount": 60
+    },
+    {
+        "type": "body",
+        "description": "Cross your legs and try to reach the floor with your hand. Repeat the movement changing which leg is in front of the other.",
+        "amount": 100
+    },
+    {
+        "type": "body",
+        "description": "Sitting, open your legs and try to reach the floor with your hands, touching the ground with your palms. Repeat it 3 times for 5 seconds.",
+        "amount": 80
+    },
+    {
+        "type": "body",
+        "description": "Pull your knee towards your chest and hold it for 10 seconds. Do it for both legs.",
+        "amount": 50
+    },
+    {
+        "type": "body",
+        "description": "Sentado, cruze uma perna e incline seu tronco à frente, troque de perna após 10 segundos.",
+        "amount": 80
+    },
+    {
+        "type": "eye",
+        "description": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente.",
+        "amount": 90
+    },
+    {
+        "type": "eye",
+        "description": "Em algum ambiente aberto, olhe o mais longe que puder em quatro direções por 3s, mexa apenas os olhos. Repita 3 vezes.",
+        "amount": 140
+    },
+    {
+        "type": "eye",
+        "description": "Usando os polegares, massage a área abaixo das sobrancelhas em movimentos circulares por 15 segundos.",
+        "amount": 70
+    },
+    {
+        "type": "body",
+        "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
+        "amount": 90
+    }
+]
