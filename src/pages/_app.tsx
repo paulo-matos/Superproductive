@@ -4,10 +4,9 @@ import { ChallengesContext, ChallengesProvider } from '../contexts/ChallengesCon
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
-  
 
   return (
-    <ChallengesProvider> 
+    <ChallengesProvider>
       {/* all elements inside Provider tag have access to the data inside this context */}
       <Component {...pageProps} />
     </ChallengesProvider>
