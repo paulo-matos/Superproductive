@@ -1,7 +1,14 @@
-# Pomodoro Technique Application - Super Productive
+# Super Productive - Pomodoro Technique Application
 
-This project is being made during the NWL (Next Level Week) by Rocketseat;
+This project was made during the NWL (Next Level Week) by Rocketseat on February 2021;
 
-### Using Next.js
+### Next.js
+### React.js
+### Javascript
 
-### #rumoaoproximonivel
+## Deploy running at:
+ [https://super-productive.vercel.app/](https://super-productive.vercel.app/)
+ 
+
+ - Cookies enabled
+ - Notification when the timer ends
