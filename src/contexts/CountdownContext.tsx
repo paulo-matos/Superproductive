@@ -36,7 +36,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
         clearTimeout(countdownTimeout); //clears the timeout event - pure JS - so it REALLY stops the timer
         setIsActive(false);
         setHasFinished(false);
-        setTime(0.1 * 60);
+        setTime(25 * 60);
     }
 
     useEffect(() => { //generates "collateral effects"

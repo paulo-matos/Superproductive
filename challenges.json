@@ -36,27 +36,27 @@
     },
     {
         "type": "body",
-        "description": "Sentado, cruze uma perna e incline seu tronco à frente, troque de perna após 10 segundos.",
+        "description": "Sitting, cross a leg and lean forward, change legs after 10 seconds.",
         "amount": 80
     },
     {
         "type": "eye",
-        "description": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente.",
+        "description": "Sitting, close your eyes and cover them with the palm of your hands for 2 minutes. Then open them normally.",
         "amount": 90
     },
     {
         "type": "eye",
-        "description": "Em algum ambiente aberto, olhe o mais longe que puder em quatro direções por 3s, mexa apenas os olhos. Repita 3 vezes.",
+        "description": "At an open space, try to look the further you can in four directions for 3 seconds each. Move only your eyes. Repeat 3 times.",
         "amount": 140
     },
     {
         "type": "eye",
-        "description": "Usando os polegares, massage a área abaixo das sobrancelhas em movimentos circulares por 15 segundos.",
+        "description": "Using your thumbs, massage the area below your eyebrows in circular moves for 15 seconds.",
         "amount": 70
     },
     {
         "type": "body",
-        "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
+        "description": "While standing, twist your waist the most you can to your left side and hold it for 5 seconds. Do it then for your right.",
         "amount": 90
     }
 ]
