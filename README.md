@@ -1,7 +1,5 @@
 # Super Productive - Pomodoro Technique Application
 
-This project was made during the NWL (Next Level Week) by Rocketseat on February 2021;
-
 ### Next.js
 ### React.js
 ### Javascript
